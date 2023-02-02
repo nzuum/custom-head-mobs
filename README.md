@@ -1,5 +1,5 @@
 # custom-head-mobs
-A datapack that adds mobs made with custom player heads, and with them, rare accessories to collect.
+A datapack that adds mobs made with custom player heads, and with them, rare accessories to collect.  
 As a consequence of using player heads, the datapack requires no resource pack! hurray!
 
 _**Pack was made for 1.18.2, may or may not work fine on versions beyond that.**_
