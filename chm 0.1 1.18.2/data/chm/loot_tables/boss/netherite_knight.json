@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:player_head",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"Netherite Knight\\'s Ring\",\"color\":\"yellow\",\"italic\":false}',Lore:['{\"text\":\"When on Accessory Slot:\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"Last Stretch\",\"color\":\"blue\",\"italic\":false}']},accessory:5,invulnerable:1,SkullOwner:{Id:[I;1603623030,-219263867,-1235579446,-2070807879],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWM5ZmE3ODI4YjRiMzdlODI2MmQyYzIyMmEwNGY4ZTMyNjFhZjJhYjNiZDQ5NGVhODA3YTkzMmNjZDE4NGE1MCJ9fX0=\"}]}}}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
