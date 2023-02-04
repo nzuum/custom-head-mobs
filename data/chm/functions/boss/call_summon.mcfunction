@@ -1,0 +1,1 @@
+execute as @s[nbt={Item:{tag:{boss_id:1}}}] at @s if block ~ ~.5 ~ soul_fire run function chm:boss/netherite_knight/summon

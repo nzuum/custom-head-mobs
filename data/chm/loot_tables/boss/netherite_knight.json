@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Netherite Knight\\'s Crystal\",\"color\":\"yellow\",\"italic\":false}',Lore:['{\"text\":\"When on Accessory Slot:\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"Last Stretch\",\"color\":\"blue\",\"italic\":false}']},accessory:5,invulnerable:1,SkullOwner:{Id:[I;1603623030,-219263867,-1235579446,-2070807879],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjFkYmUzMGIwMjdhY2JjZWI2MTI1NjNiZDg3N2NkN2ViYjcxOWVhNmVkMTM5OTAyN2RjZWU1OGJiOTA0OWQ0YSJ9fX0=\"}]}}}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Netherite Knight\\'s Helmet\",\"color\":\"yellow\",\"italic\":false}'},invulnerable:1,Enchantments:[{id:\"minecraft:protection\",lvl:5s}],AttributeModifiers:[{AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:10,Operation:0,UUID:[I;-902998406,-1378792631,-1847555320,-771703991],Slot:\"head\"},{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:12,Operation:0,UUID:[I;-1476791599,1406682179,-1327542194,1247457326],Slot:\"head\"},{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:8,Operation:0,UUID:[I;904916914,1270367956,-1076815437,-32193838],Slot:\"head\"},{AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:0.2,Operation:0,UUID:[I;-565432992,-214416502,-1505098838,-1626840050],Slot:\"head\"}],SkullOwner:{Id:[I;1603623030,-219263867,-1235579446,-2070807879],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGQzMjAxMGI0NDE2NDNlNWNjMTlmMzM3ZDJkOTE0OWQyODIxYjRmNjAwNjIwZjFiMGViZDQ3ODQwNWI3ZDgxNCJ9fX0=\"}]}}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

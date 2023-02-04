@@ -1,0 +1,4 @@
+summon zombie ~ ~ ~ {Health:40f,Tags:["changed","strength4","slow1","brute"],ArmorItems:[{id:"minecraft:spider_eye",Count:1b,tag:{display:{Name:'{"text":"Brute\'s Heart","color":"yellow","italic":false}',Lore:['{"text":"When on Accessory Slot:","color":"gray","italic":false}','{"text":"Strength 1","color":"blue","italic":false}','{"text":"Slowness 2","color":"red","italic":false}']},accessory:3}},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;1603623030,-219263867,-1235579446,-2070807879],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2E3MTUwNmIxN2U3MWQ3ZDNkMTZlNTBjMzkxNzQyZDc5OTNkMWFkMzRhNDU1ODYwYWY1NTMzMDc2ZjExZTJiYyJ9fX0="}]}}}}],ArmorDropChances:[0.05F,0.085F,0.085F,-327.670F],Attributes:[{Name:generic.max_health,Base:40}]}
+
+tp @s ~ ~-10000 ~
+kill @s

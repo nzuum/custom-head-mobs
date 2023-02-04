@@ -1,0 +1,14 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "chm:netherite_knight_chalice"
+        }
+      }
+    },
+    "rewards": {
+      "function": "chm:recipes/netherite_knight_chalice"
+    }
+  }
+  
