@@ -7,7 +7,7 @@
           "blocked": false,
           "source_entity": {
             "type": "minecraft:zombie",
-            "nbt": "{Tags:[\"brute\"]}"
+            "nbt": "{Tags:[\"zombie_brute\"]}"
           }
         }
       }

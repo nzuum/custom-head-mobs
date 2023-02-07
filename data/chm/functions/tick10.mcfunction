@@ -36,10 +36,10 @@ execute as @e[tag=strength4] run tag @s remove strength4
 execute as @e[tag=strength5] run tag @s remove strength5
 
 # netherite knight bossbar
-execute store result bossbar netherite_knight_bossbar value as @e[type=wither_skeleton,tag=n.knight] run data get entity @s Health
-execute as @e[type=wither_skeleton,tag=n.knight] at @s run bossbar set netherite_knight_bossbar players @a[distance=..50]
+execute store result bossbar netherite_knight_bossbar value as @e[type=wither_skeleton,tag=netherite_knight] run data get entity @s Health
+execute as @e[type=wither_skeleton,tag=netherite_knight] at @s run bossbar set netherite_knight_bossbar players @a[distance=..50]
 
-execute unless entity @e[type=wither_skeleton,tag=n.knight] run bossbar set netherite_knight_bossbar players @a[tag=dummy]
+execute unless entity @e[type=wither_skeleton,tag=netherite_knight] run bossbar set netherite_knight_bossbar players @a[tag=dummy]
 
 execute as @e[type=item] if data entity @s Item.tag.boss_id run function chm:boss/call_summon
 
