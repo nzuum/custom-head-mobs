@@ -43,4 +43,6 @@ execute unless entity @e[type=wither_skeleton,tag=n.knight] run bossbar set neth
 
 execute as @e[type=item] if data entity @s Item.tag.boss_id run function chm:boss/call_summon
 
+execute as @e[type=wither_skeleton,tag=cave_monster] at @s run particle large_smoke ~ ~1.5 ~ 0 0 0 0.1 10 normal
+
 schedule function chm:tick10 10t

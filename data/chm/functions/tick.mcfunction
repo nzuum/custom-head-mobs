@@ -10,6 +10,7 @@ execute as @e if entity @s[nbt={HurtTime:10s}] if predicate chm:accessory/hurt_e
 execute as @e[type=item,nbt={Item:{tag:{invulnerable:1}}}] run data modify entity @s Invulnerable set value 1
 
 #skeleton variants
+execute if entity @e[type=!#chm:not_mob,tag=!unchanged,tag=!changed] as @e[type=skeleton,tag=!unchanged,tag=!changed] at @s unless predicate chm:5 if predicate chm:20 unless predicate chm:35 unless predicate chm:50 if block ~ ~ ~ cave_air if predicate chm:light_level_check run function chm:mob/cave_monster
 execute if entity @e[type=!#chm:not_mob,tag=!unchanged,tag=!changed] as @e[type=skeleton,tag=!unchanged,tag=!changed] at @s unless predicate chm:5 unless predicate chm:20 if predicate chm:35 unless predicate chm:50 if block ~ ~ ~ cave_air run function chm:mob/skeleton_miner
 execute if entity @e[type=!#chm:not_mob,tag=!unchanged,tag=!changed] as @e[type=skeleton,tag=!unchanged,tag=!changed] at @s unless predicate chm:5 if predicate chm:20 unless predicate chm:35 unless predicate chm:50 run function chm:mob/skeleton_king
 execute as @e[type=skeleton,tag=!unchanged,tag=!changed] at @s unless predicate chm:5 unless predicate chm:20 unless predicate chm:35 if predicate chm:50 run function chm:mob/skeleton_warrior
@@ -31,9 +32,9 @@ execute as @a at @s if entity @s[nbt={Inventory:[{tag:{accessory:6}}]}] if score
 execute as @a at @s if entity @s[nbt={Inventory:[{tag:{accessory:6}}]}] if score @s diamond_pickaxe matches 1.. run function chm:accessory/miners_amulet/trigger
 execute as @a at @s if entity @s[nbt={Inventory:[{tag:{accessory:6}}]}] if score @s netherite_pickaxe matches 1.. run function chm:accessory/miners_amulet/trigger
 
-execute as @a at @s if entity @s[nbt={Inventory:[{Slot:17b,tag:{accessory:6}}]}] if score @s miners_amulet matches 1.. run function chm:accessory/miners_amulet/change_item
-execute as @a at @s if entity @s[nbt={Inventory:[{Slot:26b,tag:{accessory:6}}]}] if score @s miners_amulet matches 1.. run function chm:accessory/miners_amulet/change_item
-execute as @a at @s if entity @s[nbt={Inventory:[{Slot:35b,tag:{accessory:6}}]}] if score @s miners_amulet matches 1.. run function chm:accessory/miners_amulet/change_item
+execute as @a at @s if entity @s[nbt={Inventory:[{Slot:17b,tag:{accessory:6}}]}] if score @s miners_amulet matches 1.. run function chm:accessory/miners_amulet/init
+execute as @a at @s if entity @s[nbt={Inventory:[{Slot:26b,tag:{accessory:6}}]}] if score @s miners_amulet matches 1.. run function chm:accessory/miners_amulet/init
+execute as @a at @s if entity @s[nbt={Inventory:[{Slot:35b,tag:{accessory:6}}]}] if score @s miners_amulet matches 1.. run function chm:accessory/miners_amulet/init
 
 #head template
 

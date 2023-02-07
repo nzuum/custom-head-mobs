@@ -6,6 +6,7 @@
         "minecraft:ancient_debris",
         "minecraft:cobblestone",
         "minecraft:cobbled_deepslate",
-        "minecraft:sand"
+        "minecraft:sand",
+        "#minecraft:logs_that_burn"
     ]
 }

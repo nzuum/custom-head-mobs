@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "source_entity": {
+            "type": "minecraft:wither_skeleton",
+            "nbt": "{Tags:[\"cave_monster\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "chm:mob/hurt_by/cave_monster"
+  }
+}
