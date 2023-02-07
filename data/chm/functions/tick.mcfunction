@@ -10,8 +10,8 @@ execute as @e if entity @s[nbt={HurtTime:10s}] if predicate chm:accessory/hurt_e
 execute as @e[type=item,nbt={Item:{tag:{invulnerable:1}}}] run data modify entity @s Invulnerable set value 1
 
 #skeleton variants
-execute if entity @e[type=!#chm:not_mob,tag=!unchanged,tag=!changed] as @e[type=skeleton,tag=!unchanged,tag=!changed] at @s unless predicate chm:5 if predicate chm:20 unless predicate chm:35 unless predicate chm:50 if block ~ ~ ~ cave_air if predicate chm:light_level_check run function chm:mob/cave_monster
-execute if entity @e[type=!#chm:not_mob,tag=!unchanged,tag=!changed] as @e[type=skeleton,tag=!unchanged,tag=!changed] at @s unless predicate chm:5 unless predicate chm:20 if predicate chm:35 unless predicate chm:50 if block ~ ~ ~ cave_air run function chm:mob/skeleton_miner
+execute if entity @e[type=!#chm:not_mob,tag=!unchanged,tag=!changed] as @e[type=skeleton,tag=!unchanged,tag=!changed] at @s unless predicate chm:5 if predicate chm:20 unless predicate chm:35 unless predicate chm:50 if predicate chm:check_for_y if predicate chm:light_level_check run function chm:mob/cave_monster
+execute if entity @e[type=!#chm:not_mob,tag=!unchanged,tag=!changed] as @e[type=skeleton,tag=!unchanged,tag=!changed] at @s unless predicate chm:5 unless predicate chm:20 if predicate chm:35 unless predicate chm:50 if predicate chm:check_for_y run function chm:mob/skeleton_miner
 execute if entity @e[type=!#chm:not_mob,tag=!unchanged,tag=!changed] as @e[type=skeleton,tag=!unchanged,tag=!changed] at @s unless predicate chm:5 if predicate chm:20 unless predicate chm:35 unless predicate chm:50 run function chm:mob/skeleton_king
 execute as @e[type=skeleton,tag=!unchanged,tag=!changed] at @s unless predicate chm:5 unless predicate chm:20 unless predicate chm:35 if predicate chm:50 run function chm:mob/skeleton_warrior
 
@@ -20,7 +20,7 @@ execute if entity @e[type=!#chm:not_mob,tag=!unchanged,tag=!changed] as @e[type=
 execute if entity @e[type=!#chm:not_mob,tag=!unchanged,tag=!changed] as @e[type=wither_skeleton,tag=!unchanged,tag=!changed] at @s unless predicate chm:5 unless predicate chm:20 if predicate chm:35 unless predicate chm:50 run function chm:mob/wither_skeleton_archer
 
 #zombie variants
-execute if entity @e[type=!#chm:not_mob,tag=!unchanged,tag=!changed] as @e[type=zombie,tag=!unchanged,tag=!changed] at @s unless predicate chm:5 unless predicate chm:20 if predicate chm:35 unless predicate chm:50 if block ~ ~ ~ cave_air run function chm:mob/crated_zombie
+execute if entity @e[type=!#chm:not_mob,tag=!unchanged,tag=!changed] as @e[type=zombie,tag=!unchanged,tag=!changed] at @s unless predicate chm:5 unless predicate chm:20 if predicate chm:35 unless predicate chm:50 if predicate chm:check_for_y run function chm:mob/crated_zombie
 execute if entity @e[type=!#chm:not_mob,tag=!unchanged,tag=!changed] as @e[type=zombie,tag=!unchanged,tag=!changed] at @s unless predicate chm:5 if predicate chm:20 unless predicate chm:35 unless predicate chm:50 run function chm:mob/zombie_brute
 execute if entity @e[type=!#chm:not_mob,tag=!unchanged,tag=!changed] as @e[type=zombie,tag=!unchanged,tag=!changed] at @s unless predicate chm:5 unless predicate chm:20 if predicate chm:35 unless predicate chm:50 run function chm:mob/zombie_runner
 
